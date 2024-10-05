@@ -1,9 +1,15 @@
 # Manual de instrucciones
 
+En la raíz del proyecto crear los volúmenes que hacen falta
+
+```
+mkdir dbdata src
+```
+
 ## Levantar el contenedor
 
 ``` 
-docker compose -d --build 
+docker compose up -d --build 
 ```
 
 ## Configurar MySQL
@@ -42,7 +48,7 @@ Si no aparece ningún error parar el contenedor y volver a ejecutarlo
 
 ```
 docker compose down
-docker compose -d --build
+docker compose up -d --build
 ```
 ## Probar en el navegador
 
