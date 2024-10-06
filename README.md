@@ -60,7 +60,7 @@ DB_USERNAME=laraveluser
 DB_PASSWORD=password
 ```
 
-Guardar el archivo
+Guardar el archivo y volver al contenedor
 
 ```
 docker exec -it laravel_app php artisan migrate
