@@ -6,7 +6,11 @@ Clonar este repositorio
 git clone https://github.com/Especial2x4/laravel-docker.git
 ```
 
-En la raíz del proyecto crear los volúmenes que hacen falta
+```
+cd laravel-docker
+```
+
+Crear los volúmenes que hacen falta
 
 ```
 mkdir dbdata src
