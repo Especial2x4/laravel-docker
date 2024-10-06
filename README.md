@@ -10,15 +10,43 @@ mkdir dbdata src
 
 ``` 
 docker compose up -d --build 
+
 ```
+
+## Instalar Laravel
+
+``` 
+docker exec -it laravel_app bash
+
+```
+
+``` 
+composer create-project --prefer-dist laravel/laravel .
+
+```
+
+``` 
+chmod -R 775 storage
+chmod -R 775 bootstrap/cache
+chown -R www-data:www-data storage
+chown -R www-data:www-data bootstrap/cache
+
+```
+
+``` 
+docker-compose down
+docker-compose up -d
+
+```
+
+
 
 ## Configurar MySQL
 
+Salir del contenedor e ir a la raíz del directorio src y editar el archivo .env
+
 ```
-docker exec -it laravel_app bash
-```
-```
-vim /var/www/.env
+vim .env
 ```
 
 Configurar estas líneas en el contenido del archivo .env
@@ -35,6 +63,24 @@ DB_PASSWORD=password
 Guardar el archivo
 
 ```
+docker exec -it laravel_app php artisan migrate
+
+```
+
+Salir del contenedor y reiniciar
+
+``` 
+docker-compose down
+docker-compose up -d
+
+```
+
+```
+docker exec -it laravel_app bash
+
+```
+
+```
 php artisan migrate
 ```
 ```
@@ -44,7 +90,7 @@ php artisan tinker
 DB::connection()->getPdo();
 ```
 
-Si no aparece ningún error parar el contenedor y volver a ejecutarlo
+Si no aparece ningún error, salir y parar el contenedor y volver a ejecutarlo
 
 ```
 docker compose down
