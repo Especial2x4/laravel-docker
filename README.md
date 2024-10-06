@@ -56,7 +56,7 @@ docker compose up -d --build
 
 ## Configurar MySQL
 
-Salir del contenedor e ir a la raíz del directorio src y editar el archivo .env
+Ir a la raíz del directorio src y editar el archivo .env
 
 ```
 cd src
