@@ -48,8 +48,8 @@ Salir del contenedor y reiniciar
 ``` 
 Docker compose down
 ```
+```
 Docker compose up -d
-
 ```
 
 
@@ -85,8 +85,8 @@ Salir del contenedor y reiniciar
 ``` 
 Docker compose down
 ```
+```
 Docker compose up -d
-
 ```
 
 ```
@@ -108,6 +108,7 @@ Si no aparece ningún error, salir y parar el contenedor y volver a ejecutarlo
 
 ```
 docker compose down
+```
 ```
 docker compose up -d --build
 ```
