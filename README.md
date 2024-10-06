@@ -59,6 +59,10 @@ docker compose up -d --build
 Salir del contenedor e ir a la raíz del directorio src y editar el archivo .env
 
 ```
+cd src
+```
+
+```
 vim .env
 ```
 
