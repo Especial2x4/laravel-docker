@@ -46,8 +46,9 @@ chown -R www-data:www-data bootstrap/cache
 Salir del contenedor y reiniciar
 
 ``` 
-docker-compose down
-docker-compose up -d
+Docker compose down
+```
+Docker compose up -d
 
 ```
 
@@ -82,8 +83,9 @@ docker exec -it laravel_app php artisan migrate
 Salir del contenedor y reiniciar
 
 ``` 
-docker-compose down
-docker-compose up -d
+Docker compose down
+```
+Docker compose up -d
 
 ```
 
@@ -106,6 +108,7 @@ Si no aparece ningún error, salir y parar el contenedor y volver a ejecutarlo
 
 ```
 docker compose down
+```
 docker compose up -d --build
 ```
 ## Probar en el navegador
