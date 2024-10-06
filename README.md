@@ -46,10 +46,10 @@ chown -R www-data:www-data bootstrap/cache
 Salir del contenedor y reiniciar
 
 ``` 
-Docker compose down
+docker compose down
 ```
 ```
-Docker compose up -d
+docker compose up -d
 ```
 
 
