@@ -16,7 +16,7 @@ Crear los volúmenes que hacen falta
 mkdir dbdata src
 ```
 
-## Levantar el contenedor
+Levantar el contenedor
 
 ``` 
 docker compose up -d --build 
