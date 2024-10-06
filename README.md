@@ -84,7 +84,7 @@ docker exec -it laravel_app php artisan migrate
 
 ```
 
-Salir del contenedor y reiniciar
+Reiniciar
 
 ``` 
 docker compose down
