@@ -1,5 +1,11 @@
 # Manual de instrucciones
 
+Clonar este repositorio
+
+```
+https://github.com/Especial2x4/laravel-docker.git
+```
+
 En la raíz del proyecto crear los volúmenes que hacen falta
 
 ```
